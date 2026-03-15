@@ -117,7 +117,7 @@ int main(int argc, char* argv[])
 	fd_set fds;
 	FD_ZERO(&fds);
 	FD_SET(recv_sock, &fds);
-	tv.tv_sec = 1;
+	tv.tv_sec = 5;
 	tv.tv_usec = 0;
 
 	gettimeofday(&start, NULL);
